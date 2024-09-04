@@ -1,0 +1,41 @@
+### Create User
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "username": "José Maria",
+    "email": "josemaria@gmail.com",
+    "password": "JoseMaria1@"
+}
+
+### Create User
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "username": "Maria Manuela",
+    "email": "mariamanuela@gmail.com",
+    "password": "Mariamanuela2@"
+}
+
+### Get user by id
+GET http://localhost:8080/users/00407fb4-a9c0-41e9-aeb9-3c1c3565153f
+Content-Type: application/json
+
+### List Users
+GET http://localhost:8080/users
+Content-Type: application/json
+
+### Update User by id
+PUT http://localhost:8080/users/00407fb4-a9c0-41e9-aeb9-3c1c3565153f
+Content-Type: application/json
+
+{
+    "username": "José Manuel",
+    "email": "josemanuel@gmail.com",
+    "password": "JoseMaria1@"
+}
+
+### Delete User by id
+DELETE  http://localhost:8080/users/00407fb4-a9c0-41e9-aeb9-3c1c3565153f
+Content-Type: application/json

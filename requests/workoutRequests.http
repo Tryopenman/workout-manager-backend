@@ -1,0 +1,33 @@
+### Create Workout
+POST http://localhost:8080/users/0bf24997-7338-4ffe-aa38-dfbcc51aa57f/workouts
+Content-Type: application/json
+
+{
+    "name": "Workout 1",
+    "description": "Descriptiom for workout 1",
+    "workoutTypeId": "0205b30f-cbd5-4881-9fb8-e8b63bd889e7",
+    "exerciseIds": [
+        "14194b6c-539b-4079-8858-d7f94570d418",
+        "14194b6c-539b-4079-8858-d7f94570d418"
+    ]
+}
+
+### Get Workout by user and id
+GET http://localhost:8080/users/0bf24997-7338-4ffe-aa38-dfbcc51aa57f/workouts/fa87b6fe-d6e8-434c-a45a-f61e298b11c9	
+
+### List Workouts by id
+GET http://localhost:8080/users/0bf24997-7338-4ffe-aa38-dfbcc51aa57f/workouts
+Content-Type: application/json
+
+### Update Workout Type by id
+PUT http://localhost:8080/users/0bf24997-7338-4ffe-aa38-dfbcc51aa57f/workouts/fa87b6fe-d6e8-434c-a45a-f61e298b11c9
+Content-Type: application/json
+
+{
+    "name": "New workout",
+    "description": "Description for new workout"
+}
+
+### Delete Workout by user and id
+DELETE http://localhost:8080/users/0bf24997-7338-4ffe-aa38-dfbcc51aa57f/workouts/fa87b6fe-d6e8-434c-a45a-f61e298b11c9	
+Content-Type: application/json

@@ -1,0 +1,38 @@
+### Create Workout Type
+POST http://localhost:8080/workout-type
+Content-Type: application/json
+
+{
+    "name": "Workout type 1",
+    "description": "Description for workout type 1"
+}
+
+### Create Other Workout Type
+POST http://localhost:8080/workout-type
+Content-Type: application/json
+
+{
+    "name": "Workout type 2",
+    "description": "Description for workout type 2"
+}
+
+### Get Workout type by id
+GET http://localhost:8080/workout-type/87cd7cad-67c2-4454-bc97-f3a4c0cf237c
+Content-Type: application/json
+
+### List Workouts types
+GET http://localhost:8080/workout-type
+Content-Type: application/json
+
+### Delete Workout Type by id
+DELETE http://localhost:8080/workout-type/87cd7cad-67c2-4454-bc97-f3a4c0cf237c	
+Content-Type: application/json
+
+### Update Workout Type by id
+PUT  http://localhost:8080/workout-type/87cd7cad-67c2-4454-bc97-f3a4c0cf237c
+Content-Type: application/json
+
+{
+    "name": "New workout type",
+    "description": "Description for new workout type"
+}

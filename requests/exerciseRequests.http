@@ -1,0 +1,38 @@
+### Create Exercise
+POST http://localhost:8080/exercises
+Content-Type: application/json
+
+{
+    "name": "Exercise 1",
+    "description": "Description for exercise 1"
+}
+
+### Create Other Exercise
+POST http://localhost:8080/exercises
+Content-Type: application/json
+
+{
+    "name": "Exercise 2",
+    "description": "Description for exercise 2"
+}
+
+### Get Exercise by id
+GET http://localhost:8080/exercises/04f7005b-fd8f-4e36-9ea4-df086f068b4d
+Content-Type: application/json
+
+### List Exercises
+GET http://localhost:8080/exercises
+Content-Type: application/json
+
+### Delete Exercise by id
+DELETE http://localhost:8080/exercises/04f7005b-fd8f-4e36-9ea4-df086f068b4d
+Content-Type: application/json
+
+### Update Workout Type by id
+PUT http://localhost:8080/exercises/04f7005b-fd8f-4e36-9ea4-df086f068b4d
+Content-Type: application/json
+
+{
+    "name": "New exercise",
+    "description": "Description for new exercise" 
+}
